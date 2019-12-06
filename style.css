@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(66, 79, 131);
+}
+.gradientBackground {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: url("media/background__radial-gradient.svg");
+  background-size: cover;
+  background-position: center center;
+}
+.mainWindow {
+    display: block;
+    height: 700px;
+    width: 700px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.kylix {
+    position: absolute;
+    height: 700px;
+    width: 700px;
+}
+.kylix--shadow {
+    transform: translate(60px, 60px);
+}
+
+.rotate {
+  animation: rotate 6s linear;
+  animation-iteration-count: infinite;
+}
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(-360deg)
+  }
+}
